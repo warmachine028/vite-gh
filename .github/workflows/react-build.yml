@@ -31,10 +31,14 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd client
+          npm install
   
       - name: Build Vite app
-        run: npm run build  -- --base-href /gh-pages-workflow/
+        run: |
+         cd client 
+         npm run build  
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
