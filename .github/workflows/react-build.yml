@@ -34,7 +34,7 @@ jobs:
         run: npm install
   
       - name: Build Vite app
-        run: npm run build
+        run: npm run build  -- --base-href /gh-pages-workflow/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
