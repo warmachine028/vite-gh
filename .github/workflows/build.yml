@@ -2,10 +2,10 @@ name: ⚒️ Vite Build
 
 on:
     workflow_dispatch:
-    push:
-        branches: ['main']
-    pull_request:
-        branches: ['main']
+    # push:
+    #     branches: ['main']
+    # pull_request:
+    #     branches: ['main']
 
 jobs:
     build:
@@ -22,7 +22,7 @@ jobs:
             - name: Install dependencies
               run: |
                   cd client
-                  npm install
+                  npm i
 
             - name: Build App
               run: |
