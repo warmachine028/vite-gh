@@ -27,7 +27,7 @@ const LogIn = () => {
 				</Link>
 			</div>
 			<form
-				className="h-3/4 ring-1 w-full p-3 rounded-lg ring-black shadow-xl bg-gray-300 text-black flex flex-col gap-3"
+				className="h-3/4 ring-1 w-full p-3 rounded-lg ring-black shadow-xl bg-gray-300 text-black flex flex-col gap-3 min-w-96"
 				onSubmit={handleSubmit}
 			>
 				<h3 className="text-2xl font-semibold">Welcome Back!</h3>
