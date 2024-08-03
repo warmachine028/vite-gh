@@ -1,16 +1,16 @@
     updated on: 03rd August 2024, Saturday
 
 <div align=center>
-    <a href="https://github.com/SrijaAdhya12/vite-gh">
+    <a href="https://warmachine028.github.io/vite-gh">
         <img width="200" src="https://img.icons8.com/?size=1000&id=46874" alt="vite-gh">
     </a>
     <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> A good one liner description here </p>
-    <a src="https://github.com/SrijaAdhya12/vite-gh/forks">
-        <img alt="GitHub forks" src="https://img.shields.io/github/forks/SrijaAdhya12/vite-gh">
+    <a src="https://github.com/warmachine028/vite-gh/forks">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/warmachine028/vite-gh">
     </a>
 </div>
 
-# [Vite Gh](https://github.com/SrijaAdhya12/vite-gh)
+# [Vite Gh](https://github.com/warmachine028/vite-gh)
 
 ![line]
 
@@ -55,13 +55,13 @@
 - Enable Dependabot Alerts
 
 1. Wait for the Run Initializer above step to complete.
-2. Go to [**Security**](https://github.com/SrijaAdhya12/vite-gh/security) tab.
+2. Go to [**Security**](https://github.com/warmachine028/vite-gh/security) tab.
 3. Click on **Security Overview**.
 4. Click on `Enable Dependabot alerts` button.
 
 - Enable Code Scanning Alerts
 
-1. Go to [Code security and analysis](https://github.com/SrijaAdhya12/vite-gh/settings/security_analysis#code_scanning_settings) section in settings.
+1. Go to [Code security and analysis](https://github.com/warmachine028/vite-gh/settings/security_analysis#code_scanning_settings) section in settings.
 2. Enable subsequent **Graphs**, **updates** and **alerts**.
 3. Scroll down and go to **Tools** section set `CodeQL Analysis` to default.
 
@@ -99,8 +99,8 @@
 ## Best Contributors
 
 <div align="center">
-    <a href="https://github.com/SrijaAdhya12/vite-gh/graphs/contributors">
-        <img src="https://contrib.rocks/image?repo=SrijaAdhya12/vite-gh" alt="contributors"/>
+    <a href="https://github.com/warmachine028/vite-gh/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=warmachine028/vite-gh" alt="contributors"/>
     </a>
 </div>
 
@@ -110,7 +110,7 @@
 
 - See [LICENSE]
 
-**SrijaAdhya12, 2024**
+**Pritam Kundu, 2024**
 
 ![line]
 
@@ -119,6 +119,6 @@
 [icons]: https://icons8.com/
 [markdown-badges]: https://github.com/Ileriayo/markdown-badges
 [line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
-[License]: https://github.com/SrijaAdhya12/vite-gh/blob/main/LICENSE
+[License]: https://github.com/warmachine028/vite-gh/blob/main/LICENSE
 
 <!-- 03/08/24 -->
