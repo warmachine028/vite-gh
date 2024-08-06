@@ -12,5 +12,5 @@ updates:
           time: '21:00'
       ignore:
           - dependency-name: eslint
-            version:
+            versions:
                 - 9.8.0
