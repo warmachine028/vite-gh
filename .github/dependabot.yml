@@ -14,17 +14,3 @@ updates:
           - dependency-name: eslint
             version:
                 - 9.8.0
-    # - package-ecosystem: pip #! enable for python
-    #   directory: "/"
-    #   schedule:
-    #     interval: weekly
-    # - package-ecosystem: maven #! enable for java
-    #   directory: "/"
-    #   schedule:
-    #     interval: weekly
-    #   ignore:
-    #     - dependency-name: org.apache.maven:* # ignore Maven APIs/SPIs
-    # - package-ecosystem: bundler #! enable for ruby
-    #   directory: "/"
-    #   schedule:
-    #     interval: weekly
