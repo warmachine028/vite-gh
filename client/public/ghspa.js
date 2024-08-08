@@ -29,7 +29,7 @@ const ghspa = (l, projectPages) => {
 		const SEARCH = search ? `&q=${search.slice(1).replace(/&/g, '~and~')}` : ''
 		const URL = `${protocol}//${hostname}${PORT}${repo}/?${PATHNAME}${SEARCH}${hash}`
 		// console.log(URL, replace)
-		replace(URL)
+		l.replace(URL)
 	}
 
 	/* resolve 404 redirects into internal routes */
