@@ -19,7 +19,7 @@
  */
 
 const ghspa = (l, projectPages) => {
-	const { protocol, hostname, port, pathname, search, hash, replace } = l
+	const { protocol, hostname, port, pathname, search, hash } = l
 
 	/* redirect all 404 trafic to index.html */
 	const redirect = () => {
@@ -27,7 +27,7 @@ const ghspa = (l, projectPages) => {
 		const PATHNAME = pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}` 
 		const SEARCH = search && `&q=${search.slice(1).replace(/&/g, '~and~')}`
 		const URL = `${protocol}//${hostname}${PORT}${repo}/?${PATHNAME}${SEARCH}${hash}`
-		replace(URL)
+		l.replace(URL)
 	}
 
 	/* resolve 404 redirects into internal routes */
