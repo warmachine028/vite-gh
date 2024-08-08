@@ -2,6 +2,7 @@
 	"name": "vite-gh",
 	"private": true,
 	"version": "0.1.0",
+	"homepage": "https://github.com/warmachine028/vite-gh",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
