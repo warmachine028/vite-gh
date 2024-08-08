@@ -21,10 +21,10 @@
 const ghspa = (l, projectPages) => {
 	/* redirect all 404 trafic to index.html */
 	const redirect = () => {
-		const port = port && `:${port}`
-		const pathname = pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}` 
-		const search = search && `&q=${search.slice(1).replace(/&/g, '~and~')}`
-		const URL = `${protocol}//${hostname}${port}${repo}/?${pathname}${search}${hash}`
+		const PORT = port && `:${port}`
+		const PATHNAME = pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}` 
+		const SEARCH = search && `&q=${search.slice(1).replace(/&/g, '~and~')}`
+		const URL = `${protocol}//${hostname}${PORT}${repo}/?${PATHNAME}${SEARCH}${hash}`
 		replace(URL)
 	}
 
