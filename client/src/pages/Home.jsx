@@ -12,18 +12,20 @@ const Home = () => {
 	const handleClick = () => setCount((count) => count + 1)
 	const { user } = useAuth()
 	return (
-		<main>
-			{user ? (
-				<Link to="/profile" className="flex gap-2 items-center">
-					<CgProfile className="size-6" />
-					<span className="text-sm">{user.name}</span>
-				</Link>
-			) : (
-				<Link to="/login" className="flex gap-2 items-center">
-					<IoMdLogIn className="size-6" />
-					<span className="text-sm">Log In</span>
-				</Link>
-			)}
+		<main className="w-screen sm:min-w-96 sm:w-auto flex flex-col items-center py-40 p-5">
+			<div className="w-full px-10 sm:w-96">
+				{user ? (
+					<Link to="/profile" className="flex gap-2 items-center">
+						<CgProfile className="size-6" />
+						<span className="text-sm">{user.name}</span>
+					</Link>
+				) : (
+					<Link to="/login" className="flex gap-2 items-center">
+						<IoMdLogIn className="size-6" />
+						<span className="text-sm">Log In</span>
+					</Link>
+				)}
+			</div>
 			<div className="flex justify-center">
 				<Link to="https://vitejs.dev" target="_blank">
 					<img src={viteLogo} className="logo" alt="Vite logo" />
@@ -37,7 +39,7 @@ const Home = () => {
 				<button onClick={handleClick} type="button">
 					count is {count}
 				</button>
-				<p>
+				<p className="mt-5">
 					Edit <code>src/App.jsx</code> and save to test HMR
 				</p>
 			</div>

@@ -5,7 +5,7 @@ import { AuthProvider } from './providers'
 const App = () => {
 	return (
 		<AuthProvider>
-			<BrowserRouter basename="vite-gh">
+			<BrowserRouter basename="vite-gh/">
 				<AppRouter />
 			</BrowserRouter>
 		</AuthProvider>

@@ -17,8 +17,8 @@ const LogIn = () => {
 		}
 	}
 	return (
-		<main>
-			<div className="w-full flex justify-between">
+		<main className="w-screen sm:min-w-96 sm:w-auto flex flex-col items-center p-5 py-40">
+			<div className="w-full flex justify-between sm:w-96">
 				<Link to={-1} className="flex gap-2 items-center text-white">
 					<IoArrowBack className="size-6" />
 				</Link>
@@ -27,7 +27,7 @@ const LogIn = () => {
 				</Link>
 			</div>
 			<form
-				className="h-3/4 ring-1 w-full p-3 rounded-lg ring-black shadow-xl bg-gray-300 text-black flex flex-col gap-3 min-w-96"
+				className="h-3/4 ring-1 w-full p-3 rounded-lg ring-black shadow-xl bg-gray-300 text-black flex flex-col gap-3 sm:w-96"
 				onSubmit={handleSubmit}
 			>
 				<h3 className="text-2xl font-semibold">Welcome Back!</h3>
