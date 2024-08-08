@@ -21,31 +21,33 @@
 const ghspa = (l, projectPages) => {
 	/* redirect all 404 trafic to index.html */
 	const redirect = () => {
-		const { protocol, hostname, port, pathname, search, hash } = l
-		const URL = `${protocol}//${hostname}${port && `:${port}`}${repo}/?${pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}` }${search && `&q=${search.slice(1).replace(/&/g, '~and~')}`}${hash}`
-		l.replace(URL)
+		const port = port && `:${port}`
+		const pathname = pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}` 
+		const search = search && `&q=${search.slice(1).replace(/&/g, '~and~')}`
+		const URL = `${protocol}//${hostname}${port}${repo}/?${pathname}${search}${hash}`
+		replace(URL)
 	}
 
 	/* resolve 404 redirects into internal routes */
 	const resolve = () => {
-		if (l.search) {
+		if (search) {
 			var q = {}
-			l.search
-				.slice(1)
-				.split('&')
-				.forEach((v) => {
-					const a = v.split('=')
-					q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
-				})
+			search.slice(1).split('&').forEach((v) => {
+				const a = v.split('=')
+				q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
+			})
 			if (q.p !== undefined) {
-				window.history.replaceState(null, null, repo + (q.p || '') + (q.q ? '?' + q.q : '') + l.hash)
+				const state = `${repo}${q.p || ''}${q.q && `?${q.q}`}${hash}`
+				window.history.replaceState(null, null, state)
 			}
 		}
 	}
 
-	const repo = projectPages && `/${l.pathname.split('/')[1]}`
+	const { protocol, hostname, port, pathname, search, hash, replace } = l
+	const repo = projectPages && `/${pathname.split('/')[1]}`
 	/* if current document is 404 page page, redirect to index.html otherwise resolve */
 	document.title === '404' ? redirect() : resolve()
 }
 
 ghspa(window.location, window.projectPages || true)
+
