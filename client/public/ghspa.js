@@ -19,6 +19,8 @@
  */
 
 const ghspa = (l, projectPages) => {
+	const { protocol, hostname, port, pathname, search, hash, replace } = l
+
 	/* redirect all 404 trafic to index.html */
 	const redirect = () => {
 		const PORT = port && `:${port}`
@@ -43,7 +45,6 @@ const ghspa = (l, projectPages) => {
 		}
 	}
 
-	const { protocol, hostname, port, pathname, search, hash, replace } = l
 	const repo = projectPages && `/${pathname.split('/')[1]}`
 	/* if current document is 404 page page, redirect to index.html otherwise resolve */
 	document.title === '404' ? redirect() : resolve()
