@@ -5,21 +5,9 @@
 		<link rel="icon" type="image/svg+xml" href="vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vite GH</title>
-		<script>
-			var redirect = location.href
-		</script>
+		<script>var redirect = location.href</script>
 		<script type="text/javascript" src="ghspa.js"></script>
-		<script>
-			$(function () {
-				if (location.href != redirect) {
-					$('#message').html('Coming at you from')
-					$('#message-detail').html(location.href)
-				} else {
-					$('#message').html('')
-					$('#message-detail').html('Still here at the index.html file')
-				}
-			})
-		</script>
+
 	</head>
 	<body>
 		<div id="root"></div>
