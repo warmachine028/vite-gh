@@ -24,9 +24,10 @@ const ghspa = (l, projectPages) => {
 	/* redirect all 404 trafic to index.html */
 	const redirect = () => {
 		const PORT = port && `:${port}`
-		const PATHNAME = pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}` 
+		const PATHNAME = pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}`
 		const SEARCH = search && `&q=${search.slice(1).replace(/&/g, '~and~')}`
 		const URL = `${protocol}//${hostname}${PORT}${repo}/?${PATHNAME}${SEARCH}${hash}`
+		console.log(URL, PATHNAME, SEARCH)
 		l.replace(URL)
 	}
 
@@ -34,10 +35,13 @@ const ghspa = (l, projectPages) => {
 	const resolve = () => {
 		if (search) {
 			var q = {}
-			search.slice(1).split('&').forEach((v) => {
-				const a = v.split('=')
-				q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
-			})
+			search
+				.slice(1)
+				.split('&')
+				.forEach((v) => {
+					const a = v.split('=')
+					q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
+				})
 			if (q.p !== undefined) {
 				const state = `${repo}${q.p || ''}${q.q && `?${q.q}`}${hash}`
 				window.history.replaceState(null, null, state)
@@ -51,4 +55,3 @@ const ghspa = (l, projectPages) => {
 }
 
 ghspa(window.location, window.projectPages || true)
-
