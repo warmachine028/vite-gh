@@ -2,20 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-			crossorigin="anonymous"
-		/>
-
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-
 		<title>Vite GH</title>
 		<script type="text/javascript">
 			// Single Page Apps for GitHub Pages
@@ -37,16 +23,12 @@
 			// https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
 			// https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
 			// Otherwise, leave segmentCount as 0.
-			var segmentCount = 1
+			var segments = 0
 
-			var l = window.location
-			l.replace(
-				l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-				l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-				l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-				(l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-				l.hash
-			)
+			var _location = window.location
+            var {protocol, hostname, port, pathname, search, hash} = location
+            const URL = `${protocol}//${hostname}${port && `:${port}`}${pathname.split('/').slice(0, 1 + segments).join('/')}/?/${pathname.slice(1).split('/').slice(segments).join('/').replace(/&/g, '~and~')}${search && '&' + search.slice(1).replace(/&/g, '~and~')}${hash}`
+            _location.replace(URL)
 		</script>
 	</head>
 	<body></body>
