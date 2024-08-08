@@ -29,6 +29,7 @@
             var {protocol, hostname, port, pathname, search, hash} = location
             const URL = `${protocol}//${hostname}${port && `:${port}`}${pathname.split('/').slice(0, 1 + segments).join('/')}/?/${pathname.slice(1).split('/').slice(segments).join('/').replace(/&/g, '~and~')}${search && '&' + search.slice(1).replace(/&/g, '~and~')}${hash}`
             _location.replace(URL)
+            console.log(URL)
 		</script>
 	</head>
 	<body></body>
