@@ -18,33 +18,23 @@
  *
  */
 
-;(function (l, projectPages) {
-	var repo = projectPages ? '/' + l.pathname.split('/')[1] : ''
-
+const ghspa = (l, projectPages) => {
 	/* redirect all 404 trafic to index.html */
-	function redirect() {
-		l.replace(
-			l.protocol +
-				'//' +
-				l.hostname +
-				(l.port ? ':' + l.port : '') +
-				repo +
-				'/?' +
-				(l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(repo, '') : '') +
-				(l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-				l.hash
-		)
+	const redirect = () => {
+		const { protocol, hostname, port, pathname, search, hash } = l
+		const URL = `${protocol}//${hostname}${port && `:${port}`}${repo}/?${pathname && `p=${pathname.replace(/&/g, '~and~').replace(repo, '')}` }${search && `&q=${search.slice(1).replace(/&/g, '~and~')}`}${hash}`
+		l.replace(URL)
 	}
 
 	/* resolve 404 redirects into internal routes */
-	function resolve() {
+	const resolve = () => {
 		if (l.search) {
 			var q = {}
 			l.search
 				.slice(1)
 				.split('&')
-				.forEach(function (v) {
-					var a = v.split('=')
+				.forEach((v) => {
+					const a = v.split('=')
 					q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
 				})
 			if (q.p !== undefined) {
@@ -53,6 +43,9 @@
 		}
 	}
 
+	const repo = projectPages && `/${l.pathname.split('/')[1]}`
 	/* if current document is 404 page page, redirect to index.html otherwise resolve */
 	document.title === '404' ? redirect() : resolve()
-})(window.location, window.projectPages || true)
+}
+
+ghspa(window.location, window.projectPages || true)
