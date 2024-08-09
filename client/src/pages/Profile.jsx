@@ -15,19 +15,19 @@ const Profile = () => {
 		}
 	}
 	return (
-		<main className="w-screen sm:min-w-96 sm:w-auto flex flex-col items-center p-5 py-40">
-			<div className="sm:w-96 w-full">
+		<main className="flex w-screen flex-col items-center p-5 py-40 sm:w-auto sm:min-w-96">
+			<div className="w-full sm:w-96">
 				<div className="flex justify-between">
-					<Link to={-1} className="flex gap-2 items-center text-white">
+					<Link to={-1} className="flex items-center gap-2 text-white">
 						<IoArrowBack className="size-6" />
 					</Link>
-					<Link to="/" className="flex gap-2 items-center text-white">
+					<Link to="/" className="flex items-center gap-2 text-white">
 						<IoHomeSharp className="size-6" />
 					</Link>
 				</div>
-				<div className="ring-1 p-3 rounded-lg ring-black shadow-xl  bg-gray-300 text-black flex flex-col gap-3">
+				<div className="flex flex-col gap-3 rounded-lg bg-gray-300 p-3 text-black shadow-xl ring-1 ring-black">
 					<h3 className="text-2xl font-semibold">Profile</h3>
-					<div className="flex items-start flex-col">
+					<div className="flex flex-col items-start">
 						<span>
 							<strong>Name: </strong>
 							{user.name}
@@ -55,7 +55,7 @@ const Profile = () => {
 					</div>
 
 					<button
-						className="bg-green-700 text-white rounded-md hover:opacity-60 hover:ring-1 hover:ring-gray-900 transition-opacity ease-in-out w-full"
+						className="w-full rounded-md bg-green-700 text-white transition-opacity ease-in-out hover:opacity-60 hover:ring-1 hover:ring-gray-900"
 						type="button"
 						onClick={handleClick}
 					>

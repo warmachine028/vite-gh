@@ -12,15 +12,15 @@ const Home = () => {
 	const handleClick = () => setCount((count) => count + 1)
 	const { user } = useAuth()
 	return (
-		<main className="w-screen sm:min-w-96 sm:w-auto flex flex-col items-center py-40 p-5">
+		<main className="flex w-screen flex-col items-center p-5 py-40 sm:w-auto sm:min-w-96">
 			<div className="w-full px-10 sm:w-96">
 				{user ? (
-					<Link to="/profile" className="flex gap-2 items-center">
+					<Link to="/profile" className="flex items-center gap-2">
 						<CgProfile className="size-6" />
 						<span className="text-sm">{user.name}</span>
 					</Link>
 				) : (
-					<Link to="/login" className="flex gap-2 items-center">
+					<Link to="/login" className="flex items-center gap-2">
 						<IoMdLogIn className="size-6" />
 						<span className="text-sm">Log In</span>
 					</Link>

@@ -29,11 +29,7 @@ const AuthProvider = ({ children }) => {
 	}
 
 	const value = { user, signUp, logIn, logOut, loading, setLoading }
-	return (
-		<AuthContext.Provider value={value}>
-			{!loading && children}
-		</AuthContext.Provider>
-	)
+	return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>
 }
 
 export default AuthProvider

@@ -1,9 +1,22 @@
 {
 	"name": "vite-gh",
-	"private": true,
 	"version": "0.1.0",
-	"homepage": "https://github.com/warmachine028/vite-gh",
+	"description": "A website to host on GH Pages built on Vite + React.",
+	"main": "src/main.jsx",
 	"type": "module",
+	"private": true,
+	"author": {
+		"name": "Pritam Kundu",
+		"email": "warmachine028@outlook.com",
+		"url": "https://github.com/warmachine028"
+	},
+	"contributors": [
+		{
+			"name": "Srija Adhya",
+			"email": "srijaadhya.11sc.2020@gmail.com",
+			"url": "https://github.com/srijaadhya12"
+		}
+	],
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
@@ -27,7 +40,23 @@
 		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-react-refresh": "^0.4.9",
 		"postcss": "^8.4.41",
+		"prettier": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.5",
 		"tailwindcss": "^3.4.9",
 		"vite": "^5.4.0"
-	}
+	},
+	"homepage": "https://warmachine028.github.io/vite-gh",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/warmachine028/vite-gh.git"
+	},
+	"keywords": [
+		"react",
+		"tailwind",
+		"vite",
+		"react-icons",
+		"react-router-dom",
+		"react-hooks",
+		"react-context-api"
+	]
 }

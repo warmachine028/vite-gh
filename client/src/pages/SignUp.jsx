@@ -17,24 +17,24 @@ const SignUp = () => {
 		}
 	}
 	return (
-		<main className="w-screen sm:min-w-96 sm:w-auto flex flex-col items-center p-5 py-40">
-			<div className="sm:w-96 w-full">
-				<div className=" flex justify-between ">
-					<Link to={-1} className="flex gap-2 items-center text-white">
+		<main className="flex w-screen flex-col items-center p-5 py-40 sm:w-auto sm:min-w-96">
+			<div className="w-full sm:w-96">
+				<div className="flex justify-between">
+					<Link to={-1} className="flex items-center gap-2 text-white">
 						<IoArrowBack className="size-6" />
 					</Link>
-					<Link to="/" className="flex gap-2 items-center text-white">
+					<Link to="/" className="flex items-center gap-2 text-white">
 						<IoHomeSharp className="size-6" />
 					</Link>
 				</div>
 
 				<form
-					className="h-3/4 ring-1 w-full p-3 rounded-lg ring-black shadow-xl bg-gray-300 text-black flex flex-col gap-3"
+					className="flex h-3/4 w-full flex-col gap-3 rounded-lg bg-gray-300 p-3 text-black shadow-xl ring-1 ring-black"
 					onSubmit={handleSubmit}
 				>
 					<h3 className="text-2xl font-semibold">Join Us!</h3>
 					<div className="grid grid-cols-3 gap-2">
-						<label htmlFor="name" className="text-lg text-start">
+						<label htmlFor="name" className="text-start text-lg">
 							Name:
 						</label>
 						<input
@@ -44,11 +44,11 @@ const SignUp = () => {
 							onChange={handleChange}
 							id="name"
 							autoComplete="name"
-							className="bg-transparent ring-1 ring-black placeholder:text-slate-500 p-2 rounded-md col-span-2 placeholder:italic"
+							className="col-span-2 rounded-md bg-transparent p-2 ring-1 ring-black placeholder:italic placeholder:text-slate-500"
 							placeholder="Srija Adhya"
 							required
 						/>
-						<label htmlFor="email" className="text-lg text-start">
+						<label htmlFor="email" className="text-start text-lg">
 							Email:
 						</label>
 						<input
@@ -58,11 +58,11 @@ const SignUp = () => {
 							onChange={handleChange}
 							id="email"
 							autoComplete="email"
-							className="bg-transparent ring-1 ring-black placeholder:text-slate-500 p-2 rounded-md col-span-2 placeholder:italic"
+							className="col-span-2 rounded-md bg-transparent p-2 ring-1 ring-black placeholder:italic placeholder:text-slate-500"
 							placeholder="srija.adhya@email.com"
 							required
 						/>
-						<label htmlFor="password" className="text-lg text-start">
+						<label htmlFor="password" className="text-start text-lg">
 							Password:
 						</label>
 						<input
@@ -72,11 +72,11 @@ const SignUp = () => {
 							onChange={handleChange}
 							id="password"
 							autoComplete="current-password"
-							className="bg-transparent ring-1 ring-black placeholder:text-slate-500 p-2 rounded-md col-span-2 placeholder:italic"
+							className="col-span-2 rounded-md bg-transparent p-2 ring-1 ring-black placeholder:italic placeholder:text-slate-500"
 							placeholder="1@#asB1438"
 							required
 						/>
-						<label htmlFor="age" className="text-lg text-start">
+						<label htmlFor="age" className="text-start text-lg">
 							Age:
 						</label>
 						<input
@@ -86,13 +86,13 @@ const SignUp = () => {
 							onChange={handleChange}
 							id="age"
 							pattern="\d*"
-							className="bg-transparent ring-1 ring-black placeholder:text-slate-500 p-2 rounded-md col-span-2 placeholder:italic"
+							className="col-span-2 rounded-md bg-transparent p-2 ring-1 ring-black placeholder:italic placeholder:text-slate-500"
 							placeholder="21"
 							required
 						/>
 					</div>
 					<button
-						className="bg-blue-700 text-white rounded-md hover:opacity-60 hover:ring-1 hover:ring-gray-900 transition-opacity ease-in-out w-full"
+						className="w-full rounded-md bg-blue-700 text-white transition-opacity ease-in-out hover:opacity-60 hover:ring-1 hover:ring-gray-900"
 						type="submit"
 					>
 						Sign Up
