@@ -2,7 +2,7 @@
 
 <div align=center>
     <a href="https://warmachine028.github.io/vite-gh">
-        <img width="200" src="https://img.icons8.com/?size=1000&id=46874" alt="vite-gh">
+        <img width="200" src="client/public/vite.svg" alt="vite-gh">
     </a>
     <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> A good one liner description here </p>
     <a src="https://github.com/warmachine028/vite-gh/forks">
