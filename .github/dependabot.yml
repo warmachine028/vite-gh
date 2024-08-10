@@ -10,7 +10,4 @@ updates:
       schedule:
           interval: daily
           time: '21:00'
-      ignore:
-          - dependency-name: eslint
-            versions:
-                - 9.*
+      
