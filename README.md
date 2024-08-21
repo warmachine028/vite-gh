@@ -1,4 +1,4 @@
-    updated on: 17th August 2024, Saturday
+    updated on: 21st August 2024, Wednesday
 
 <div align=center>
     <a href="https://warmachine028.github.io/vite-gh">
@@ -121,4 +121,4 @@
 [line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 [License]: https://github.com/warmachine028/vite-gh/blob/main/LICENSE
 
-<!-- 17/08/24 -->
+<!-- 21/08/24 -->
