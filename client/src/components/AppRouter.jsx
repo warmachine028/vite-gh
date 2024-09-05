@@ -5,7 +5,6 @@ import { AuthRoute, PrivateRoute } from '../routes'
 const AppRouter = () => {
 	const location = useLocation()
 	return (
-		// <S
 		<Routes location={location}>
 			<Route path="/" element={<Home />} />
 			<Route path="/profile" element={<PrivateRoute component={<Profile />} />} />
