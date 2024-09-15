@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
 	plugins: [react()],
 	base: '/vite-gh/',
-	build: {
-		rollupOptions: {
-			external: ['ghspa.js']
-		}
-	}
+	// build: {
+	// 	rollupOptions: {
+	// 		external: ['ghspa.js']
+	// 	}
+	// }
 })
