@@ -28,71 +28,48 @@
 
 ## Introduction
 
-- A github template to automate basic initial workflows of a project.
+- A basic project to deploy vite project with react-router-dom to github-pages.
 
 ## Getting Started
 
-### Generating a repo from the template
-
-1. To configure automatic preview generation, replace [`url`](.github/take-snapshot.mjs#L5) with your hosted URL.
-2. Configure the [CodeQL Analysis](.github/workflows/codeql-analysis.yml) according to your tech stack/language.
-3. Configure [Dependabot](https://github.com/dependabot) alerts for package auto-updates and PRs for the package-manager of your choice inside [.github/dependabot.yml](.github/dependabot.yml)
-4. Configure the directories and cron jobs of the package managers _(eg. client/server)_ inside [.github/dependabot.yml](.github/dependabot.yml).
-5. By default **Dependabot Alerts** are enabled for npm only, the ones relevant to your project.
-6. Feel free to add your own sections _(eg. Configuring, Designs, Documents, Diagrams)_ in this readme according to your requirements, make sure to link those sections in the above [**Table of Contents**](#table-of-contents)
-7. You can find some free url-resourses below to find [markdown-badges], [icons] etc.
-
-### Forking this template
-
-- Run Initializer Action
-
-1. Go to **Actions** tab
-2. Enable workflows by Clicking on **green button** which says `I understand my workflows, go ahead and enable them`.
-3. Click on `🍴 Fork initialize` from Actions Sidebar.
-4. Click on `Run Workflow` in the **main** branch.
-5. Go to **Security** tab
-
-- Enable Dependabot Alerts
-
-1. Wait for the Run Initializer above step to complete.
-2. Go to [**Security**](https://github.com/warmachine028/vite-gh/security) tab.
-3. Click on **Security Overview**.
-4. Click on `Enable Dependabot alerts` button.
-
-- Enable Code Scanning Alerts
-
-1. Go to [Code security and analysis](https://github.com/warmachine028/vite-gh/settings/security_analysis#code_scanning_settings) section in settings.
-2. Enable subsequent **Graphs**, **updates** and **alerts**.
-3. Scroll down and go to **Tools** section set `CodeQL Analysis` to default.
+- Supports basic auth
+- Supports theme
+- User Dashboard
+- Supports auto deploy on push using `github actions`
 
 ![line]
 
 ## Developement
 
-- Steps used for development of this project
-- Build processes
-- CI/CD commands
-- Docker commands
+```sh
+> cd client
+> npm i
+> npm run dev
+```
 
 ![line]
 
 ## Tech Stack Used
 
-- GitHub
-- Markdown
-- Prettier
-- Dependabot
-- GitHub Actions
-- Yaml
+- Vite
+- React
 - JavaScript
+- GitHub Pages
+- GitHub Actions
+- Markdown
+- Dependabot
 
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Prettier](https://img.shields.io/badge/prettier-1A2B34?style=for-the-badge&logo=prettier&logoColor=pink) ![Dependabot](https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Prettier](https://img.shields.io/badge/prettier-1A2B34?style=for-the-badge&logo=prettier&logoColor=pink) ![Dependabot](https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white) ![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515) 
 
 ![line]
 
 ## Preview
 
-![Snapshot](.github/preview.png)
+<picture align="center">
+    <source media="(prefers-color-scheme: light)" srcset=".github/preview-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset=".github/preview-dark.png">
+    <img src=".github/preview-light.png" alt="preview">
+</picture>
 
 ![line]
 
