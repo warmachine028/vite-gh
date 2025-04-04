@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router'
 import { Home, LogIn, NotFound, Profile, SignUp } from '../pages'
 import { AuthRoute, PrivateRoute } from '../routes'
 

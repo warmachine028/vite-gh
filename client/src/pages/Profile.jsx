@@ -2,7 +2,7 @@ import { useAuth } from '../hooks'
 import { FaCheck } from 'react-icons/fa'
 import { RxCross2 } from 'react-icons/rx'
 import moment from 'moment'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { IoArrowBack, IoHomeSharp } from 'react-icons/io5'
 
 const Profile = () => {

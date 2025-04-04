@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useAuth } from '../hooks'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import { IoArrowBack, IoHomeSharp } from 'react-icons/io5'
 
 const SignUp = () => {
