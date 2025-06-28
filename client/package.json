@@ -45,7 +45,7 @@
 		"prettier": "^3.6.0",
 		"prettier-plugin-packagejson": "^2.5.15",
 		"prettier-plugin-tailwindcss": "^0.6.13",
-		"tailwindcss": "^4.1.8",
+		"tailwindcss": "^4.1.11",
 		"vite": "^7.0.0"
 	},
 	"homepage": "https://warmachine028.github.io/vite-gh",
