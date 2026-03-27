@@ -36,7 +36,7 @@
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react": "^6.0.1",
-		"autoprefixer": "^10.4.24",
+		"autoprefixer": "^10.4.27",
 		"eslint": "^10.1.0",
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^7.0.1",
@@ -46,7 +46,7 @@
 		"prettier-plugin-packagejson": "^3.0.2",
 		"prettier-plugin-tailwindcss": "^0.7.2",
 		"tailwindcss": "^4.1.18",
-		"vite": "^8.0.2"
+		"vite": "^8.0.3"
 	},
 	"homepage": "https://warmachine028.github.io/vite-gh",
 	"repository": {
